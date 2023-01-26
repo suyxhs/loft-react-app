@@ -3,6 +3,10 @@ import React, {useState} from "react";
 function LoftBlock({ title, price }) {
   const [loftCount, setLoftCount] = useState(0);
 
+  const onClickAdd = () => {
+    setLoftCount(loftCount + 1);
+  }
+
   return (
     <div className="loft-block">
       <img
@@ -23,7 +27,7 @@ function LoftBlock({ title, price }) {
       </div>
       <div className="loft-block__bottom">
         <div className="loft-block__price">от {price} ₽</div>
-        <button className="button button--outline button--add">
+        <button onClick={onClickAdd} className="button button--outline button--add">
           <svg
             width="12"
             height="12"
