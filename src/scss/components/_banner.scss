@@ -1,0 +1,68 @@
+@import "../variables";
+
+// Styles for banner START
+.banner img {
+  display: flex;
+  width: 1300px;
+  margin: 5px auto 60px;
+  border-radius: 10px;
+}
+
+.main-banner-content {
+  top: 10%;
+  left: 5%;
+}
+
+.main-banner-content h4 {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #bf4800;
+  margin: 0 0 12px;
+  letter-spacing: 0.3px;
+}
+
+.main-banner-content h5 {
+  font-size: 42px;
+  line-height: 54px;
+  letter-spacing: -2px;
+  font-weight: 500;
+}
+
+.main-banner-content p {
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 0.4;
+  color: #131921;
+}
+
+.main-banner-content button {
+  background-color: #282828;
+  color: white;
+  font-size: 14px;
+  padding: 10px 30px;
+  border-radius: 15px;
+}
+
+.main-banner-content button:hover {
+  background-color: #131921;
+  transition: 0.5s;
+  color: #fff;
+}
+
+// SMALL BANNER
+
+.small-banner-content {
+  top: 15%;
+  left: 5%;
+}
+
+.small-banner img {
+  width: 400px;
+}
+
+.small-banner {
+  width: 49%;
+}
+
+// Styles for banner END
