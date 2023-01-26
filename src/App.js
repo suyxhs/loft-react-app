@@ -1,23 +1,37 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+
+import Header from "./components/Header";
+import Categories from "./components/Categories";
+import Banner from "./components/Banner";
+import Sort from "./components/Sort";
+import LoftBlock from "./components/LoftBlock";
+
+import "./scss/app.scss";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="wrapper">
+      <Header />
+      <Banner />
+      <div className="content">
+        <div className="container">
+          <div className="content__top">
+            <Categories />
+            <Sort />
+          </div>
+          <h2 className="content__title">Вся мебель</h2>
+          <div className="content__items">
+            <LoftBlock title="Складной стол Loft" price={1000}/>
+            <LoftBlock title="Светильник Loft" price={10000}/>
+            <LoftBlock title="Шкаф Купе Loft" price={500}/>
+            <LoftBlock title="Светильник Loft" price={10000}/>
+            <LoftBlock title="Шкаф Купе Loft" price={500}/>
+            <LoftBlock title="Светильник Loft" price={10000}/>
+            <LoftBlock title="Шкаф Купе Loft" price={500}/>
+            <LoftBlock title="Светильник Loft" price={10000}/>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
