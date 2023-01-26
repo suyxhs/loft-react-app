@@ -46,7 +46,7 @@
 
 .main-banner-content button:hover {
   background-color: #131921;
-  transition: 0.5s;
+  transition: background-color $duration ease-in-out, border-color $duration ease-in-out;
   color: #fff;
 }
 
