@@ -1,17 +1,12 @@
-import React, {useState} from "react";
+import React from "react";
 
-function LoftBlock({ title, price }) {
-  const [loftCount, setLoftCount] = useState(0);
-
-  const onClickAdd = () => {
-    setLoftCount(loftCount + 1);
-  }
+function LoftBlock({ title, price, imageUrl, sizes }) {
 
   return (
     <div className="loft-block">
       <img
         className="loft-block__image"
-        src="img/table/table01.jpg"
+        src={imageUrl}
         alt="Wardrobe"
       />
       <h4 className="loft-block__title">{title}</h4>
@@ -20,14 +15,14 @@ function LoftBlock({ title, price }) {
           <li className="active">Таблица размеров</li>
         </ul>
         <ul>
-          <li>-- см.</li>
-          <li>-- см.</li>
-          <li>-- см.</li>
+          {
+            sizes.map(size => <li>{size} см.</li>)
+          }
         </ul>
       </div>
       <div className="loft-block__bottom">
         <div className="loft-block__price">от {price} ₽</div>
-        <button onClick={onClickAdd} className="button button--outline button--add">
+        <button className="button button--outline button--add">
           <svg
             width="12"
             height="12"
@@ -41,7 +36,7 @@ function LoftBlock({ title, price }) {
             />
           </svg>
           <span>Добавить</span>
-          <i>{loftCount}</i>
+          <i>0</i>
         </button>
       </div>
     </div>
