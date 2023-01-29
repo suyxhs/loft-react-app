@@ -1,0 +1,92 @@
+[
+  {
+    "id": 0,
+    "imageUrl": "img/table/table01.jpg",
+    "title": "Складной стол Loft",
+    "sizes": ["45↑", "75→", "45↓"],
+    "price": 1999,
+    "category": 3,
+    "rating": 4
+  },
+  {
+    "id": 1,
+    "imageUrl": "img/table/table02.jpg",
+    "title": "Журнальный стол",
+    "sizes": ["40↑", "85→", "40↓"],
+    "price": 1500,
+    "category": 3,
+    "rating": 6
+  },
+  {
+    "id": 2,
+    "imageUrl": "img/chair/chair01.jpg",
+    "title": "Стул с подлокотниками",
+    "sizes": ["45↑", "70→", "45↓"],
+    "price": 1799,
+    "category": 2,
+    "rating": 4
+  },
+  {
+    "id": 3,
+    "imageUrl": "img/chair/chair02.jpg",
+    "title": "Полубарный стул",
+    "sizes": ["80↑", "25→", "80↓"],
+    "price": 1499,
+    "category": 2,
+    "rating": 2
+  },
+  {
+    "id": 4,
+    "imageUrl": "img/chair/chair03.jpg",
+    "title": "Барный стул со спинкой",
+    "sizes": ["90↑", "75→", "90↓"],
+    "price": 1699,
+    "category": 2,
+    "rating": 8
+  },
+  {
+    "id": 5,
+    "imageUrl": "img/table/table03.jpg",
+    "title": "Журнальный стол",
+    "sizes": ["80↑", "80→", "80↓"],
+    "price": 2199,
+    "category": 3,
+    "rating": 2
+  },
+  {
+    "id": 6,
+    "imageUrl": "img/table/table04.jpg",
+    "title": "Складной стол",
+    "sizes": ["50↑", "50→", "50↓"],
+    "price": 2399,
+    "category": 3,
+    "rating": 9
+  },
+  {
+    "id": 7,
+    "imageUrl": "img/table/table05.jpg",
+    "title": "Барный столик",
+    "sizes": ["80↑", "30→", "80↓"],
+    "price": 1999,
+    "category": 3,
+    "rating": 10
+  },
+  {
+    "id": 8,
+    "imageUrl": "img/chair/chair04.jpg",
+    "title": "Кресло",
+    "sizes": ["45↑", "75→", "45↓"],
+    "price": 2599,
+    "category": 2,
+    "rating": 10
+  },
+  {
+    "id": 9,
+    "imageUrl": "img/chair/chair05.jpg",
+    "title": "Барный стул",
+    "sizes": ["75↑", "35→", "75↓"],
+    "price": 2300,
+    "category": 2,
+    "rating": 7
+  }
+]
