@@ -6,6 +6,8 @@ import Banner from "./components/Banner";
 import Sort from "./components/Sort";
 import LoftBlock from "./components/LoftBlock";
 
+import itemLoft from "./assets/itemLoft.json";
+
 import "./scss/app.scss";
 
 function App() {
@@ -21,14 +23,14 @@ function App() {
           </div>
           <h2 className="content__title">Вся мебель</h2>
           <div className="content__items">
-            <LoftBlock title="Складной стол Loft" price={1000}/>
-            <LoftBlock title="Светильник Loft" price={10000}/>
-            <LoftBlock title="Шкаф Купе Loft" price={500}/>
-            <LoftBlock title="Светильник Loft" price={10000}/>
-            <LoftBlock title="Шкаф Купе Loft" price={500}/>
-            <LoftBlock title="Светильник Loft" price={10000}/>
-            <LoftBlock title="Шкаф Купе Loft" price={500}/>
-            <LoftBlock title="Светильник Loft" price={10000}/>
+            {itemLoft.map((obj) => (
+              <LoftBlock
+                title={obj.title}
+                price={obj.price}
+                imageUrl={obj.imageUrl}
+                sizes={obj.sizes}
+              />
+            ))}
           </div>
         </div>
       </div>
