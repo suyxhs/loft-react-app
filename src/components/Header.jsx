@@ -5,8 +5,8 @@ function Header() {
         <div className="header__logo">
           <img width="38" src="./img/logo.svg" alt="Loft logo" />
           <div>
-            <h1>React Loft</h1>
-            <p>Мебель на заказ</p>
+            <h1 className="mb-0">React Loft</h1>
+            <p className="mb-0">Мебель на заказ</p>
           </div>
         </div>
         <div className="header__cart">
