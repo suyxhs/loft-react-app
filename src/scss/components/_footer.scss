@@ -1,0 +1,15 @@
+@import '../variables';
+
+footer {
+    background-color: #fff;
+}
+
+footer:not(:first-child) {
+    
+}
+
+footer .input-group-text {
+    background-color: #131921;
+    color: #fff;
+    padding: 8px 17px;
+}
