@@ -3,16 +3,6 @@ function Banner() {
     <section className="home-wrapper-1 py-5">
       <div className="container-xxl">
         <div className="row">
-          {/* FIRST BANNER START */}
-          <div className="banner">
-            <img
-              className="banner-img"
-              src="img/banner/banner-img.png"
-              alt="banner"
-            />
-          </div>
-          {/* FIRST BANNER END */}
-
           <div className="col-6">
             {/* MAIN BANNER START */}
             <div className="main-banner position-relative">
