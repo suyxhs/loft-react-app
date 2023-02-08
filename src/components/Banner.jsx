@@ -11,12 +11,14 @@ function Banner() {
                 className="img-fluid rounded-3"
                 alt="main banner"
               />
-              <div className="main-banner-content position-absolute">
+              
+              {/*<div className="main-banner-content position-absolute">
                 <h4>Наши работы</h4>
                 <h5>Мебель Loft</h5>
                 <p>Цены: от 1000 до 30000 ₽</p>
                 <button>Купить</button>
-              </div>
+              </div>*/}
+                                      
             </div>
             {/* MAIN BANNER END */}
           </div>
