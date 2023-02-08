@@ -3,7 +3,8 @@ import React from "react";
 function LoftBlock({ title, price, imageUrl, sizes }) {
 
   return (
-    <div className="loft-block">
+    <div className="loft-block__wrapper">
+      <div className="loft-block">
       <img
         className="loft-block__image"
         src={imageUrl}
@@ -42,6 +43,7 @@ function LoftBlock({ title, price, imageUrl, sizes }) {
           <i>0</i>
         </button>
       </div>
+    </div>
     </div>
   );
 }
