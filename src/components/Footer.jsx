@@ -13,7 +13,7 @@ function Footer() {
                       <h2 className="mb-0">REACT-LOFT</h2>
                     </div>
                 </div>
-                <div className="col-7">
+                {/*<div className="col-7">
                   <div className="input-group">
                     <input 
                       type="text"
@@ -26,7 +26,7 @@ function Footer() {
                       Отправить
                     </button>
                   </div>
-                </div>
+                </div>*/}
             </div>
         </div>
       </footer>
@@ -37,28 +37,19 @@ function Footer() {
             <div className="col-4">
               <h4 className="mb-0">Контакты</h4>
               <div className="footer-contact d-flex flex-column">
-                <p>На доработке..</p>
-                <p>На доработке..</p>
-                <p>На доработке..</p>
-                <p>На доработке..</p>
+                <p>--</p>
+                <p>--</p>
+                <p>--</p>
+                <p>--</p>
               </div>
             </div>
             <div className="col-3">
               <h4 className="mb-0">Информация</h4>
               <div className="footer-info d-flex flex-column">
-                <p>На доработке..</p>
-                <p>На доработке..</p>
-                <p>На доработке..</p>
-                <p>На доработке..</p>
-              </div>
-            </div>
-            <div className="col-3">
-              <h4 className="mb-0">Навигация по сайту</h4>
-              <div className="footer-link d-flex flex-column">
-                <p>На доработке..</p>
-                <p>На доработке..</p>
-                <p>На доработке..</p>
-                <p>На доработке..</p>
+                <p>--</p>
+                <p>--</p>
+                <p>--</p>
+                <p>--</p>
               </div>
             </div>
           </div>
