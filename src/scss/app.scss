@@ -167,12 +167,13 @@ body {
     &-img {
       display: flex;
       align-items: center;
-      margin-right: 15px;
+      margin-right: 50px;
       width: 10%;
 
       img {
-        width: 80px;
+        width: 150px;
         height: 80px;
+        border-radius: 0.6rem;
       }
     }
 
@@ -325,17 +326,18 @@ body {
   }
 
   &--empty {
-    margin: 0 auto;
+    margin: 50px auto;
     width: 560px;
     text-align: center;
 
     h2 {
       font-size: 32px;
+      font-weight: 800;
       margin-bottom: 10px;
     }
 
     p {
-      font-size: 18px;
+      font-size: 20px;
       line-height: 145.4%;
       letter-spacing: 0.01em;
       color: #777777;
@@ -348,7 +350,7 @@ body {
 
     img {
       display: block;
-      width: 300px;
+      width: 350px;
       margin: 45px auto 60px;
     }
 

@@ -1,6 +1,33 @@
 import React from "react";
+import { useDispatch } from "react-redux";
 
-const CartItem = () => {
+import { addItem, minusItem, removeItem } from "../redux/slices/cartSlice";
+
+const CartItem = ({ id, title, price, count, imageUrl }) => {
+  const dispatch = useDispatch();
+
+  const onClickPlus = () => {
+    dispatch(
+      addItem({
+        id,
+      })
+    );
+  };
+
+  const onClickMinus = () => {
+    dispatch(
+      minusItem(id)
+    );
+  };
+
+  const onClickRemove = () => {
+    if (window.confirm('Вы уверены, что хотите удалить товар из корзины?')) {
+      dispatch(
+        removeItem(id)
+      );
+    }
+  };
+
   return (
     <div className="cart__item">
       <div className="cart__item-img">
@@ -11,7 +38,6 @@ const CartItem = () => {
       </div>
       <div className="cart__item-count">
         <button
-          disabled={count === 1}
           onClick={onClickMinus}
           className="button button--outline button--circle cart__item-count-minus"
         >
@@ -32,7 +58,7 @@ const CartItem = () => {
             ></path>
           </svg>
         </button>
-        <b>{count}</b>
+        <b>{count > 0 ? count : onClickRemove()}</b>
         <button
           onClick={onClickPlus}
           className="button button--outline button--circle cart__item-count-plus"
