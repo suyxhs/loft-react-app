@@ -24,14 +24,13 @@ function Sort() {
 
   React.useEffect(() => {
     const handleClickOutside = (event) => {
-      console.log(event.composedPath());
       let path = event.composedPath().includes(sortRef.current);
-      if (!path) setOpen(false);
+      if (!path) {
+        setOpen(false);
+      }
     };
-
-    document.body.addEventListener('click', handleClickOutside);
-
-    return () => document.body.removeEventListener('click', handleClickOutside);
+    document.body.addEventListener("click", handleClickOutside);
+    return () => document.body.removeEventListener("click", handleClickOutside);
   }, []);
 
   return (

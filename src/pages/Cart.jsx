@@ -1,7 +1,11 @@
 import React from "react";
 import { Link } from 'react-router-dom';
+import { useDispatch, useSelector } from "react-redux";
 
-const Cart = ({ title, price, imageUrl }) => {
+const Cart = () => {
+  const dispatch = useDispatch();
+  const items = useSelector(state => state.cart.items);
+
   return (
     <div className="container container--cart">
     <div class="cart">
@@ -79,9 +83,11 @@ const Cart = ({ title, price, imageUrl }) => {
         </div>
       </div>
       <div class="content__items">
-
-        {imageUrl} {imageUrl} {imageUrl} {imageUrl}
-        
+        <div className="cart__item">
+          <div className="cart__item-img">
+            <img className="loft-block__image" src="https://i.ibb.co/7QVbVHh/k-round.png" alt="LoftItem" />
+          </div>
+        </div>
       </div>
       <div class="cart__bottom">
         <div class="cart__bottom-details">

@@ -13,7 +13,9 @@ import { SearchContext } from "../App";
 
 const Home = () => {
   const dispatch = useDispatch();
-  const { categoryId, sort, currentPage } = useSelector((state) => state.filter);
+  const { categoryId, sort, currentPage } = useSelector(
+    (state) => state.filter
+  );
 
   const { searchValue } = React.useContext(SearchContext);
   const [items, setItems] = React.useState([]);
@@ -23,9 +25,9 @@ const Home = () => {
     dispatch(setCategoryId(id));
   };
 
-  const onClickPage = number => {
+  const onClickPage = (number) => {
     dispatch(setCurrentPage(number));
-  }
+  };
 
   React.useEffect(() => {
     setIsLoading(true);
@@ -39,22 +41,16 @@ const Home = () => {
       .get(
         `https://63d83131baa0f79e09a56b4b.mockapi.io/items?page=${currentPage}&limit=8&${category}&sortBy=${sortBy}&order=${order}${search}`
       )
-      .then(res => {
+      .then((res) => {
         setItems(res.data);
         setIsLoading(false);
       });
-    {/*window.scrollTo(0, 0);*/}
+    {
+      /*window.scrollTo(0, 0);*/
+    }
   }, [categoryId, sort.sortProperty, searchValue, currentPage]);
 
-  const loftItems = items.map((obj) => (
-    <LoftBlock
-      key={obj.id}
-      title={obj.title}
-      price={obj.price}
-      imageUrl={obj.imageUrl}
-      sizes={obj.sizes}
-    />
-  ));
+  const loftItems = items.map((obj) => <LoftBlock key={obj.id} {...obj} />);
 
   const skeletons = [...new Array(10)].map((_, index) => (
     <Skeleton key={index} />
