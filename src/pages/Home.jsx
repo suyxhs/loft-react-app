@@ -45,9 +45,7 @@ const Home = () => {
         setItems(res.data);
         setIsLoading(false);
       });
-    {
-      /*window.scrollTo(0, 0);*/
-    }
+    window.scrollTo(0, 0);
   }, [categoryId, sort.sortProperty, searchValue, currentPage]);
 
   const loftItems = items.map((obj) => <LoftBlock key={obj.id} {...obj} />);

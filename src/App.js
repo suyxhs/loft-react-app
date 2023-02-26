@@ -5,6 +5,7 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import Cart from "./pages/Cart";
+import FullLoft from "./pages/FullLoft";
 import NotFound from "./pages/NotFound";
 
 import "./scss/app.scss";
@@ -22,6 +23,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/cart" element={<Cart />} />
+            <Route path="/loft/:id" element={<FullLoft />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
           <Footer />
